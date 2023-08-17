@@ -1,0 +1,1174 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* colors */
+
+/* 
+#1a73e8
+#a6c6fa */
+
+button {
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    font-size: 105%;
+    cursor: pointer;
+}
+
+body {
+    background-color: #202124;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    overflow: hidden;
+}
+
+main {
+    padding: 2vw 1vw;
+    height: 80vh;
+
+    display: flex;
+}
+
+.main {
+    display: flex;
+    gap: 1vw;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: stretch;
+    justify-content: space-evenly;
+}
+
+.user {
+    width: 21vw;
+    height: 17vw;
+    padding: 1vw;
+    background-color: #36373a;
+    border-radius: 10px;
+    display: flex;
+    gap: 1vw;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.mic-status {
+    text-align: right;
+}
+
+.mic-status img {
+    border-radius: 50%;
+    background-color: #2c2c30;
+    padding: 0.2vw;
+    width: 1.3vw;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    border-radius: 50%;
+    padding: 0.2vw;
+    width: 6vw;
+    height: 6vw;
+}
+.name {
+    text-align: left;
+}
+
+.right,
+.members,
+.chats {
+    width: 550px;
+    background-color: #fff;
+    color: black;
+    border-radius: 10px;
+}
+.upper-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    padding: 1.5vw;
+    border-bottom: 1px solid #a6a6ac;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5vw;
+    font-size: 1.7vw;
+}
+
+.joining-info {
+    font-size: 1.5vw;
+}
+
+.meet-url {
+    font-size: 0.9vw;
+    color: #666;
+}
+
+.copy-info {
+    font-size: 1.1vw;
+    color: #5b9bef;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    cursor: pointer;
+}
+
+.extra-info {
+    text-align: center;
+    font-size: 1.1vw;
+    color: #666;
+    padding-top: 1vw;
+}
+.close-info {
+    cursor: pointer;
+}
+
+.add-people {
+    width: max-content;
+    display: flex;
+    gap: 1.5vw;
+    background-color: #e8f0fe;
+    align-items: center;
+    padding: 0.5vw 1.5vw;
+    border-radius: 1vw;
+    color: #5b9bef;
+    cursor: pointer;
+}
+
+.add-people-img {
+    width: 1.8vw;
+}
+
+.search-people {
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    justify-content: left;
+
+    padding: 0.5vw;
+    cursor: pointer;
+}
+
+.search-people-input {
+    font-size: 1.2vw;
+    width: 15vw;
+
+    padding: 0.4vw;
+}
+
+.search-people-img {
+    width: 1.5vw;
+}
+
+.member-list {
+    padding: 1vw 1.5vw;
+}
+.member-list-heading {
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    margin-bottom: 1vw;
+    color: #979797;
+}
+
+.user-profile-data-dots-img {
+    cursor: pointer;
+}
+
+.add-people-form {
+    font-size: 1vw;
+}
+
+.add-people-form-name {
+    padding-left: 0.5vw;
+    margin-left: 1vw;
+}
+
+.add-people-form-pic {
+    padding-left: 0.5vw;
+    margin-left: 1vw;
+    width: auto;
+}
+.user-profiles-data {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+    max-height: 17vw;
+    flex-wrap: nowrap;
+    overflow-y: scroll;
+
+    border: 2px solid #979797;
+    border-radius: 0.75vw;
+    padding: 1vw;
+}
+.user-profile-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #979797;
+    padding: 0.25vw 1vw;
+    border-radius: 1vw;
+}
+
+.user-profile-data-img {
+    width: 3vw;
+    border-radius: 1.5vw;
+}
+
+.user-profile-data-mic-img,
+.user-profile-data-dots-img {
+    width: 1.2vw;
+}
+
+.chats .upper-right {
+    padding: 1.5vw;
+    border-bottom: none;
+}
+.chats .header {
+    margin-bottom: 0vw;
+}
+
+.chats-alert {
+    color: #979797;
+    background-color: #f1f3f4;
+    font-size: 0.8vw;
+    text-align: center;
+    padding: 0.5vw 0.6vw;
+    margin: 1vw;
+    border-radius: 5px;
+}
+
+.message-send {
+    padding: 0.5vw 1vw;
+    height: 26.5vw;
+}
+
+.message-sender {
+    display: flex;
+    gap: 1vw;
+}
+
+.message-sender-name {
+    font-weight: 500;
+    font-size: 0.9vw;
+}
+
+.message-sending-time {
+    font-size: 1vw;
+    color: #979797;
+}
+.message-sender-message {
+    font-size: 1vw;
+}
+
+.take-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+.take-message-input {
+    width: 14vw;
+    padding: 0.5vw 1vw;
+    font-size: 1vw;
+}
+
+.take-message-img {
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw 2vw;
+    align-items: center;
+}
+
+.vl {
+    border-left: 3px solid #999;
+    height: 1.75vw;
+}
+
+.general-info,
+.meet-options {
+    display: flex;
+    gap: 1vw;
+}
+
+.audio,
+.camera,
+.caption,
+.present,
+.more-option {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 1.5vw;
+
+    text-align: center;
+    cursor: pointer;
+}
+
+.close {
+    width: 5vw;
+    height: 3vw;
+    border-radius: 1.5vw;
+    background-color: #ea4335;
+}
+
+.dot-menu {
+    position: absolute;
+    left: 55.7%;
+    top: 39%;
+    background-color: #fff;
+    color: black;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    border-radius: 5px;
+}
+
+.dot-menu-upper,
+.dot-menu-lower {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75vw;
+}
+
+.dot-menu-upper {
+    padding-bottom: 0.75vw;
+    border-bottom: 2px solid #56575a;
+}
+
+.dot-menu-lower {
+    padding-top: 0.75vw;
+}
+
+.extra {
+    display: flex;
+    gap: 1.5vw;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.info,
+.chat,
+.member,
+.board {
+    width: 2.1vw;
+    height: 2.1vw;
+
+    cursor: pointer;
+    border-radius: 1vw;
+    padding: 0.2vw;
+    text-align: center;
+}
+
+.info img,
+.chat img,
+.member img,
+.board img {
+    width: 1.7vw;
+    height: 1.7vw;
+}
+
+.end-screen {
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: #fff;
+    left: 0;
+    top: 0;
+    display: block;
+    text-align: center;
+}
+
+.end-screen h1 {
+    color: #44474a;
+    font-weight: 400;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.end-screen button {
+    border: 1px solid #44474a;
+    border-radius: 4px;
+    padding: 0.3vw 1vw;
+    color: #1a73e8;
+    margin-bottom: 2%;
+    background-color: #fff;
+    font-weight: 500;
+}
+
+.end-screen button:hover {
+    color: #1773ea;
+    background-color: #f1f1f1;
+}
+
+.end-screen p a {
+    color: #1a73e8;
+    cursor: pointer;
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1481px) {
+    main {
+        height: 83vh;
+    }
+    .main {
+        gap: 2vw;
+    }
+
+    .user {
+        width: 19vw;
+        padding: 0.5vw;
+    }
+
+    .mic-status img {
+        width: 1.5vw;
+    }
+
+    .profile img {
+        width: 7vw;
+        height: 7vw;
+    }
+    .name {
+        font-size: 1.3vw;
+    }
+
+    .right,
+    .members,
+    .chats {
+        width: 950px;
+        border-radius: 20px;
+    }
+
+    .member-list {
+        padding: 1vw 1.5vw;
+    }
+    .member-list-heading {
+        font-size: larger;
+    }
+
+    .add-people-form {
+        font-size: 1.4vw;
+    }
+
+    #r1,
+    #r2 {
+        height: 1vw;
+        width: 1vw;
+    }
+
+    .add-people-form-name {
+        width: 10vw;
+        height: 1vw;
+        font-size: 1vw;
+    }
+
+    .add-people-form-pic {
+        width: 5vw;
+        height: 1vw;
+        font-size: 1vw;
+    }
+    .add {
+        width: 4vw;
+        height: 2vw;
+        font-size: 1vw;
+    }
+
+    .user-profiles-data {
+        max-height: 25vw;
+    }
+    .user-profile-data-name {
+        font-size: 1.2vw;
+    }
+
+    .chats-alert {
+        font-size: 1vw;
+    }
+
+    .message-send {
+        height: 33.5vw;
+    }
+
+    .message-sender-name {
+        font-size: 1.3vw;
+        margin-bottom: 10px;
+    }
+
+    .message-sending-time {
+        font-size: 1.2vw;
+        color: #979797;
+    }
+    .message-sender-message {
+        font-size: 1.2vw;
+    }
+
+    /* done */
+
+    .vl {
+        border-left: 3px solid #999;
+        height: 2.5vw;
+    }
+
+    .time,
+    .code {
+        font-size: 1.75vw;
+    }
+
+    .general-info,
+    .meet-options {
+        gap: 2vw;
+    }
+
+    .audio,
+    .camera,
+    .caption,
+    .present,
+    .more-option {
+        width: 4vw;
+        height: 4vw;
+        border-radius: 2.5vw;
+    }
+
+    .audio img,
+    .camera img,
+    .caption img,
+    .present img,
+    .more-option img,
+    .close img {
+        width: 2.5vw;
+        height: 2.5vw;
+    }
+
+    .close {
+        width: 7vw;
+        height: 4vw;
+        border-radius: 2.2vw;
+    }
+
+    .dot-menu {
+        left: 60%;
+        top: 52%;
+        padding: 1vw;
+        border-radius: 9px;
+        font-size: 1vw;
+    }
+
+    .extra {
+        gap: 1.75vw;
+    }
+
+    .info,
+    .chat,
+    .member,
+    .board {
+        width: 4vw;
+        height: 4vw;
+        border-radius: 3vw;
+    }
+
+    .info img,
+    .chat img,
+    .member img,
+    .board img {
+        width: 2.5vw;
+        height: 2.5vw;
+    }
+
+    .end-screen h1 {
+        font-size: 5vw;
+    }
+
+    .end-screen button {
+        font-size: 2vw;
+    }
+
+    .end-screen button:hover {
+        font-size: 1.5vw;
+    }
+}
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1025px) and (max-width: 1480px) {
+    main {
+        height: 80vh;
+    }
+    .main {
+        gap: 1vw;
+    }
+
+    .user {
+        width: 19vw;
+        padding: 0.5vw;
+    }
+
+    .mic-status img {
+        width: 1.5vw;
+    }
+
+    .profile img {
+        width: 7vw;
+        height: 7vw;
+    }
+    .name {
+        font-size: 1.5vw;
+    }
+
+    .right,
+    .members,
+    .chats {
+        width: 550px;
+        border-radius: 15px;
+    }
+
+    .member-list {
+        padding: 1vw 1.5vw;
+    }
+    .member-list-heading {
+        font-size: small;
+    }
+
+    .add-people-form {
+        font-size: 1vw;
+    }
+
+    #r1,
+    #r2 {
+        height: 1vw;
+        width: 1vw;
+    }
+
+    .add-people-form-name {
+        width: 10vw;
+        height: 1vw;
+        font-size: 1vw;
+    }
+
+    .add-people-form-pic {
+        width: 5vw;
+        height: 1vw;
+        font-size: 1vw;
+    }
+    .add {
+        width: 4vw;
+        height: 2vw;
+        font-size: 1vw;
+    }
+
+    .user-profiles-data {
+        max-height: 17vw;
+    }
+    .user-profile-data-name {
+        font-size: 1.2vw;
+    }
+
+    .chats-alert {
+        font-size: 1vw;
+    }
+
+    .message-send {
+        height: 25vw;
+    }
+
+    .message-sender-name {
+        font-size: 1.3vw;
+        margin-bottom: 10px;
+    }
+
+    .message-sending-time {
+        font-size: 1.2vw;
+        color: #979797;
+    }
+    .message-sender-message {
+        font-size: 1.2vw;
+    }
+
+    /* done */
+
+    .vl {
+        border-left: 3px solid #999;
+        height: 2.5vw;
+    }
+
+    .time,
+    .code {
+        font-size: 1.75vw;
+    }
+
+    .general-info,
+    .meet-options {
+        gap: 2vw;
+    }
+
+    .audio,
+    .camera,
+    .caption,
+    .present,
+    .more-option {
+        width: 4vw;
+        height: 4vw;
+        border-radius: 2.5vw;
+    }
+
+    .audio img,
+    .camera img,
+    .caption img,
+    .present img,
+    .more-option img,
+    .close img {
+        width: 2.25vw;
+        height: 2.25vw;
+    }
+
+    .close {
+        width: 7vw;
+        height: 4vw;
+        border-radius: 2.2vw;
+    }
+
+    .dot-menu {
+        left: 60%;
+        top: 46%;
+        padding: 1vw;
+        border-radius: 9px;
+        font-size: 1vw;
+    }
+
+    .extra {
+        gap: 1.75vw;
+    }
+
+    .info,
+    .chat,
+    .member,
+    .board {
+        width: 3.5vw;
+        height: 3.5vw;
+        border-radius: 3vw;
+    }
+
+    .info img,
+    .chat img,
+    .member img,
+    .board img {
+        width: 2.1vw;
+        height: 2.1vw;
+    }
+
+    .end-screen h1 {
+        font-size: 5vw;
+    }
+
+    .end-screen button {
+        font-size: 2vw;
+    }
+
+    .end-screen button:hover {
+        font-size: 1.5vw;
+    }
+}
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    main {
+        height: 83vh;
+    }
+    .main {
+        gap: 1vw;
+    }
+
+    .user {
+        width: 19vw;
+        padding: 0.5vw;
+    }
+
+    .mic-status img {
+        width: 1.5vw;
+    }
+
+    .profile img {
+        width: 7vw;
+        height: 7vw;
+    }
+    .name {
+        font-size: 1.5vw;
+    }
+
+    .right,
+    .members,
+    .chats {
+        width: 450px;
+        border-radius: 20px;
+    }
+
+    .member-list {
+        padding: 1vw 1.5vw;
+    }
+    .member-list-heading {
+        font-size: small;
+    }
+
+    .add-people-form {
+        font-size: 1.4vw;
+    }
+
+    #r1,
+    #r2 {
+        height: 1vw;
+        width: 1vw;
+    }
+
+    .add-people-form-name {
+        width: 10vw;
+        height: 1vw;
+        font-size: 1vw;
+    }
+
+    .add-people-form-pic {
+        width: 5vw;
+        height: 1vw;
+        font-size: 1vw;
+    }
+    .add {
+        width: 4vw;
+        height: 2vw;
+        font-size: 1vw;
+    }
+
+    .user-profiles-data {
+        max-height: 23vw;
+    }
+    .user-profile-data-name {
+        font-size: 1.2vw;
+    }
+
+    .chats-alert {
+        font-size: 1vw;
+    }
+
+    .message-send {
+        height: 33.5vw;
+    }
+
+    .message-sender-name {
+        font-size: 1.3vw;
+        margin-bottom: 10px;
+    }
+
+    .message-sending-time {
+        font-size: 1.2vw;
+        color: #979797;
+    }
+    .message-sender-message {
+        font-size: 1.2vw;
+    }
+
+    /* done */
+
+    .vl {
+        border-left: 3px solid #999;
+        height: 2.5vw;
+    }
+
+    .time,
+    .code {
+        font-size: 1.75vw;
+    }
+
+    .general-info,
+    .meet-options {
+        gap: 2vw;
+    }
+
+    .audio,
+    .camera,
+    .caption,
+    .present,
+    .more-option {
+        width: 3.5vw;
+        height: 3.5vw;
+        border-radius: 2.5vw;
+    }
+
+    .audio img,
+    .camera img,
+    .caption img,
+    .present img,
+    .more-option img,
+    .close img {
+        width: 2.25vw;
+        height: 2.25vw;
+    }
+
+    .close {
+        width: 6vw;
+        height: 3.5vw;
+        border-radius: 2.2vw;
+    }
+
+    .dot-menu {
+        left: 60%;
+        top: 52%;
+        padding: 1vw;
+        border-radius: 9px;
+        font-size: 1vw;
+    }
+
+    .extra {
+        gap: 1.75vw;
+    }
+
+    .info,
+    .chat,
+    .member,
+    .board {
+        width: 3.5vw;
+        height: 3.5vw;
+        border-radius: 3vw;
+    }
+
+    .info img,
+    .chat img,
+    .member img,
+    .board img {
+        width: 2.1vw;
+        height: 2.1vw;
+    }
+
+    .end-screen h1 {
+        font-size: 5vw;
+    }
+
+    .end-screen button {
+        font-size: 2vw;
+    }
+
+    .end-screen button:hover {
+        font-size: 1.5vw;
+    }
+}
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 768px) {
+    main {
+        height: 83vh;
+    }
+    .main {
+        gap: 1vw;
+    }
+
+    .user {
+        width: 19vw;
+        padding: 0.5vw;
+    }
+
+    .mic-status img {
+        width: 1.5vw;
+    }
+
+    .profile img {
+        width: 7vw;
+        height: 7vw;
+    }
+    .name {
+        font-size: 1.5vw;
+    }
+
+    .right,
+    .members,
+    .chats {
+        width: 350px;
+        border-radius: 10px;
+    }
+
+    .member-list {
+        padding: 1vw 1.5vw;
+    }
+    .member-list-heading {
+        font-size: smaller;
+    }
+
+    .add-people-form {
+        font-size: 1.4vw;
+    }
+
+    #r1,
+    #r2 {
+        height: 1vw;
+        width: 1vw;
+    }
+
+    .add-people-form-name {
+        width: 10vw;
+        height: 1vw;
+        font-size: 1vw;
+    }
+
+    .add-people-form-pic {
+        width: 5vw;
+        height: 1vw;
+        font-size: 1vw;
+    }
+    .add {
+        width: 4vw;
+        height: 2vw;
+        font-size: 1vw;
+    }
+
+    .user-profiles-data {
+        max-height: 23vw;
+    }
+    .user-profile-data-name {
+        font-size: 1.2vw;
+    }
+
+    .chats-alert {
+        font-size: 1vw;
+    }
+
+    .message-send {
+        height: 45.5vw;
+    }
+
+    .message-sender-name {
+        font-size: 1.3vw;
+        margin-bottom: 10px;
+    }
+
+    .message-sending-time {
+        font-size: 1.2vw;
+        color: #979797;
+    }
+    .message-sender-message {
+        font-size: 1.2vw;
+    }
+
+    /* done */
+
+    .vl {
+        border-left: 3px solid #999;
+        height: 2.5vw;
+    }
+
+    .time,
+    .code {
+        font-size: 1.75vw;
+    }
+
+    .general-info,
+    .meet-options {
+        gap: 2vw;
+    }
+
+    .audio,
+    .camera,
+    .caption,
+    .present,
+    .more-option {
+        width: 3.75vw;
+        height: 3.75vw;
+        border-radius: 2.5vw;
+    }
+
+    .audio img,
+    .camera img,
+    .caption img,
+    .present img,
+    .more-option img,
+    .close img {
+        width: 2.25vw;
+        height: 2.25vw;
+    }
+
+    .close {
+        width: 6vw;
+        height: 3.5vw;
+        border-radius: 2.2vw;
+    }
+
+    .dot-menu {
+        left: 62%;
+        top: 60%;
+        padding: 1vw;
+        border-radius: 9px;
+        font-size: 1vw;
+    }
+
+    .extra {
+        gap: 1.75vw;
+    }
+
+    .info,
+    .chat,
+    .member,
+    .board {
+        width: 2.5vw;
+        height: 2.5vw;
+        border-radius: 3vw;
+    }
+
+    .info img,
+    .chat img,
+    .member img,
+    .board img {
+        width: 2vw;
+        height: 2vw;
+    }
+
+    .end-screen h1 {
+        font-size: 5vw;
+    }
+
+    .end-screen button {
+        font-size: 2vw;
+    }
+
+    .end-screen button:hover {
+        font-size: 1.5vw;
+    }
+}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+}
