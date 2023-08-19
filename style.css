@@ -29,6 +29,18 @@ body {
     color: #fff;
     font-family: "Roboto", sans-serif;
     overflow: hidden;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    user-drag: none;
+    -webkit-user-drag: none;
+    -ms-user-select: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
 }
 
 main {
@@ -436,7 +448,7 @@ footer {
 
 @media (min-width: 1481px) {
     main {
-        height: 83vh;
+        height: 80vh;
     }
     .main {
         gap: 2vw;
@@ -501,7 +513,7 @@ footer {
     }
 
     .user-profiles-data {
-        max-height: 25vw;
+        max-height: 19vw;
     }
     .user-profile-data-name {
         font-size: 1.2vw;
@@ -512,7 +524,7 @@ footer {
     }
 
     .message-send {
-        height: 33.5vw;
+        height: 28vw;
     }
 
     .message-sender-name {
@@ -573,7 +585,7 @@ footer {
 
     .dot-menu {
         left: 60%;
-        top: 52%;
+        top: 50%;
         padding: 1vw;
         border-radius: 9px;
         font-size: 1vw;
@@ -685,7 +697,7 @@ footer {
     }
 
     .user-profiles-data {
-        max-height: 17vw;
+        max-height: 16vw;
     }
     .user-profile-data-name {
         font-size: 1.2vw;
@@ -696,7 +708,7 @@ footer {
     }
 
     .message-send {
-        height: 25vw;
+        height: 28.5vw;
     }
 
     .message-sender-name {
@@ -802,9 +814,9 @@ footer {
     ##Screen = B/w 768px to 1024px
   */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
     main {
-        height: 83vh;
+        height: 82vh;
     }
     .main {
         gap: 1vw;
@@ -869,7 +881,7 @@ footer {
     }
 
     .user-profiles-data {
-        max-height: 23vw;
+        max-height: 19vw;
     }
     .user-profile-data-name {
         font-size: 1.2vw;
@@ -880,7 +892,7 @@ footer {
     }
 
     .message-send {
-        height: 33.5vw;
+        height: 29vw;
     }
 
     .message-sender-name {
@@ -986,7 +998,7 @@ footer {
     ##Screen = B/w 481px to 767px
   */
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 769px) {
     main {
         height: 83vh;
     }
@@ -1053,7 +1065,7 @@ footer {
     }
 
     .user-profiles-data {
-        max-height: 23vw;
+        max-height: 32vw;
     }
     .user-profile-data-name {
         font-size: 1.2vw;
@@ -1064,7 +1076,7 @@ footer {
     }
 
     .message-send {
-        height: 45.5vw;
+        height: 44.5vw;
     }
 
     .message-sender-name {
@@ -1171,4 +1183,183 @@ footer {
   */
 
 @media (min-width: 320px) and (max-width: 480px) {
+    main {
+        height: 89vh;
+    }
+    .main {
+        gap: 1vw;
+    }
+
+    .user {
+        width: 25 vw;
+        padding: 0.5vw;
+    }
+
+    .mic-status img {
+        width: 1.5vw;
+    }
+
+    .profile img {
+        width: 7vw;
+        height: 7vw;
+    }
+    .name {
+        font-size: 1.5vw;
+    }
+
+    .right,
+    .members,
+    .chats {
+        width: 300px;
+        border-radius: 10px;
+    }
+
+    .member-list {
+        padding: 1vw 1.5vw;
+    }
+    .member-list-heading {
+        font-size: 2vw;
+    }
+    .header {
+        font-size: 4vw;
+    }
+
+    .add-people-form {
+        font-size: 1.7vw;
+    }
+
+    #r1,
+    #r2 {
+        height: 1vw;
+        width: 1vw;
+    }
+
+    .add-people-form-name {
+        width: 10vw;
+        height: 1vw;
+        font-size: 1vw;
+    }
+
+    .add-people-form-pic {
+        width: 5vw;
+        height: 1vw;
+        font-size: 1vw;
+    }
+    .add {
+        width: 4vw;
+        height: 2vw;
+        font-size: 1vw;
+    }
+
+    .user-profiles-data {
+        max-height: 80vw;
+    }
+    .user-profile-data-name {
+        font-size: 1.2vw;
+    }
+
+    .chats-alert {
+        font-size: 1vw;
+    }
+
+    .message-send {
+        height: 90vw;
+    }
+
+    .message-sender-name {
+        font-size: 1.3vw;
+        margin-bottom: 10px;
+    }
+
+    .message-sending-time {
+        font-size: 1.2vw;
+        color: #979797;
+    }
+    .message-sender-message {
+        font-size: 1.2vw;
+    }
+
+    /* done */
+
+    .vl {
+        border-left: 3px solid #999;
+        height: 2.5vw;
+    }
+
+    .time,
+    .code {
+        font-size: 1.75vw;
+    }
+
+    .general-info,
+    .meet-options {
+        gap: 2vw;
+    }
+
+    .audio,
+    .camera,
+    .caption,
+    .present,
+    .more-option {
+        width: 3.75vw;
+        height: 3.75vw;
+        border-radius: 2.5vw;
+    }
+
+    .audio img,
+    .camera img,
+    .caption img,
+    .present img,
+    .more-option img,
+    .close img {
+        width: 2.25vw;
+        height: 2.25vw;
+    }
+
+    .close {
+        width: 6vw;
+        height: 3.5vw;
+        border-radius: 2.2vw;
+    }
+
+    .dot-menu {
+        left: 62%;
+        top: 60%;
+        padding: 1vw;
+        border-radius: 9px;
+        font-size: 1vw;
+    }
+
+    .extra {
+        gap: 1.75vw;
+    }
+
+    .info,
+    .chat,
+    .member,
+    .board {
+        width: 2.5vw;
+        height: 2.5vw;
+        border-radius: 3vw;
+    }
+
+    .info img,
+    .chat img,
+    .member img,
+    .board img {
+        width: 2vw;
+        height: 2vw;
+    }
+
+    .end-screen h1 {
+        font-size: 5vw;
+    }
+
+    .end-screen button {
+        font-size: 2vw;
+    }
+
+    .end-screen button:hover {
+        font-size: 1.5vw;
+    }
 }
