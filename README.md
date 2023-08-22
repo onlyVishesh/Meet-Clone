@@ -1,6 +1,8 @@
 # Meet Clone
 
-#### Video Sample -
+#### Video Sample - 
+
+https://github.com/onlyVishesh/Meet-Clone/assets/121187728/20aae0cd-5189-4c66-8c49-17ab2002dab0
 
 #### This clone has the following features
 
